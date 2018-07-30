@@ -1,3 +1,5 @@
+# Modifier: Liang Lixin
+# Thanks for nondanee
 import binascii
 import struct
 import base64
