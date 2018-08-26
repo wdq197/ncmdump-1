@@ -75,4 +75,4 @@ if __name__ == '__main__':
             except:
                 pass
     else:
-        print("Usage: python ncmdump.py [FilePath]")
+        print("Usage: python ncmdump.py \"File Name\"")
