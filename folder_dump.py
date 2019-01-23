@@ -71,14 +71,15 @@ def file_extension(path):
 if __name__ == '__main__':
     import sys
     if len(sys.argv) > 1:
-        list = os.listdir(sys.argv[1:]) # Get all files in folder.
+        rootdir = sys.argv[1]
+        list = os.listdir(sys.argv[1]) # Get all files in folder.
         for i in range(0,len(list)):
             path = os.path.join(rootdir,list[i])
             if os.path.isfile(path):
                 if os.path.isfile(path):
                     if file_extension(path) == ".ncm":
                         try:
-                            dump(file_path)
+                            dump(path)
                         except:
                             pass
     else:
